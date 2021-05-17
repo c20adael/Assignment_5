@@ -8,9 +8,11 @@
 
     <ListView
         android:id="@+id/PierListView"
-        android:layout_width="match_parent"
-        android:layout_height="240dp"
+        android:layout_width="353dp"
+        android:layout_height="216dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
