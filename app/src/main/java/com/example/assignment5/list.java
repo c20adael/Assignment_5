@@ -50,17 +50,6 @@ public class list extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
         Button button = findViewById(R.id.Getinfo);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -125,9 +114,9 @@ public class list extends AppCompatActivity {
                     String name = jsonObject.getString("name");
                     String location = jsonObject.getString("location");
                     int Length = jsonObject.getInt("size");
-
-                    Pier mountain = new Pier(name, location, Length);
-                    PierArrayList.add(mountain);
+                    int hej = jsonObject.getInt("cost");
+                    Pier pier = new Pier(name, location, Length, hej);
+                    PierArrayList.add(pier);
                 }
                 adapter.notifyDataSetChanged();
 
