@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 
 import org.json.JSONArray;
@@ -20,8 +21,13 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 
 public class list extends AppCompatActivity {
+
+
+    private ArrayList<Pier> PierArrayList=new ArrayList<>();
+    private ArrayAdapter<Pier> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
