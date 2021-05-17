@@ -7,8 +7,11 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -33,6 +36,30 @@ public class list extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
+
+        adapter=new ArrayAdapter<Pier>(this,R.layout.textviewextra,R.id.Actualtextviewextra,PierArrayList);
+        ListView PierList=findViewById(R.id.PierListView);
+        PierList.setAdapter(adapter);
+        PierList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getApplicationContext(), PierArrayList.get(position).info(), Toast.LENGTH_LONG).show();
+
+            }
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         Button button = findViewById(R.id.Getinfo);
         button.setOnClickListener(new View.OnClickListener() {
