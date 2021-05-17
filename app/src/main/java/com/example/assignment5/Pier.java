@@ -11,7 +11,7 @@ public class Pier {
     }
     public String info(){
         String tmp = new String();
-        tmp+=name+" is located in "+location+"and is "+length+"m long.";
+        tmp+=name+" is located in "+location+" and is "+length+"m long.";
         return tmp;
     }
     @Override
