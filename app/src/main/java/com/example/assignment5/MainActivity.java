@@ -14,11 +14,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = findViewById(R.id.about);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button about = findViewById(R.id.about);
+        about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, About.class);
+                startActivity(intent);
+
+            }
+        });
+        Button list = findViewById(R.id.PierList);
+        list.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, list.class);
                 startActivity(intent);
 
             }
