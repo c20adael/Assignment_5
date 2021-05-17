@@ -87,20 +87,20 @@ public class list extends AppCompatActivity {
             return null;
         }
 
-        /*@Override
+        @Override
         protected void onPostExecute(String json) {
             try {
-                mountainArrayList.clear();
+                PierArrayList.clear();
                 JSONArray jsonArray = new JSONArray(json);
                 for (int i = 0; i < jsonArray.length(); i++) {
                     JSONObject jsonObject = jsonArray.getJSONObject(i);
 
                     String name = jsonObject.getString("name");
                     String location = jsonObject.getString("location");
-                    int height = jsonObject.getInt("size");
+                    int Length = jsonObject.getInt("size");
 
-                    Mountain mountain = new Mountain(name, location, height);
-                    mountainArrayList.add(mountain);
+                    Pier mountain = new Pier(name, location, Length);
+                    PierArrayList.add(mountain);
                 }
                 adapter.notifyDataSetChanged();
 
@@ -109,6 +109,6 @@ public class list extends AppCompatActivity {
             catch (JSONException e) {
                 Log.d("JSON", "Could not parse: " + json + "\n due to expectation:" + e);
             }
-        }*/
+        }
     }
 }
