@@ -114,8 +114,15 @@ public class list extends AppCompatActivity {
                     String name = jsonObject.getString("name");
                     String location = jsonObject.getString("location");
                     int Length = jsonObject.getInt("size");
-                    int hej = jsonObject.getInt("cost");
-                    Pier pier = new Pier(name, location, Length, hej);
+                    int cost = jsonObject.getInt("cost");
+
+                    JSONObject auxdata = jsonObject.getJSONObject("auxdata");
+                    String licence = auxdata.getString("licence");
+                    String img = auxdata.getString("img");
+
+                    Pier pier = new Pier(name, location, Length, cost, licence, img);
+
+
                     PierArrayList.add(pier);
                 }
                 adapter.notifyDataSetChanged();
