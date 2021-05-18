@@ -9,12 +9,36 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="338dp"
-        android:layout_height="643dp"
-        android:text="TextView"
+        android:layout_width="330dp"
+        android:layout_height="156dp"
+        android:text="Denna appen är för människor som gillar pirer. Nu i dessa tider kan man inte resa runt i hamnområden eftersom det pågår en pandemi. Så för att ändra på läget och ta piren till dig som användare så har det skapats en app som visar pirvärlden för dig."
+        android:textAlignment="center"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="303dp"
+        android:layout_height="291dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/licences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="licences"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

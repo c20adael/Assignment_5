@@ -12,9 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment5">
         <activity
-            android:name=".list"
-            android:parentActivityName=".MainActivity">
+            android:name=".licence"
+            android:parentActivityName=".About">
         </activity>
+        <activity
+            android:name=".list"
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".About"
             android:parentActivityName=".MainActivity" />
