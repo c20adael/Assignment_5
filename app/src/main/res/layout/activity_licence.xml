@@ -10,47 +10,71 @@
         android:id="@+id/licencetext1"
         android:layout_width="353dp"
         android:layout_height="62dp"
+        android:layout_marginStart="28dp"
+
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="40dp"
         android:text="Bild till Progreso Pier är skapad av Ros_K Photographie och licenencerad under https://creativecommons.org/licenses/by/2.0/"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="39dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/licencetext2"
         android:layout_width="353dp"
         android:layout_height="62dp"
+        android:layout_marginStart="28dp"
+
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="50dp"
         android:text="Bild till Progreso Pier är skapad av Ros_K Photographie och licenencerad under https://creativecommons.org/licenses/by/2.0/"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="116dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/licencetext1" />
 
     <TextView
         android:id="@+id/licencetext3"
         android:layout_width="353dp"
         android:layout_height="62dp"
+        android:layout_marginStart="28dp"
+
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="50dp"
         android:text="Bild till Progreso Pier är skapad av Ros_K Photographie och licenencerad under https://creativecommons.org/licenses/by/2.0/"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="199dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/licencetext2" />
 
     <TextView
         android:id="@+id/licencetext4"
         android:layout_width="353dp"
         android:layout_height="62dp"
+        android:layout_marginStart="28dp"
+
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="50dp"
         android:text="Bild till Progreso Pier är skapad av Ros_K Photographie och licenencerad under https://creativecommons.org/licenses/by/2.0/"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="283dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/licencetext3" />
 
     <TextView
         android:id="@+id/licencetext5"
         android:layout_width="353dp"
         android:layout_height="62dp"
+        android:layout_marginStart="28dp"
+
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="50dp"
         android:text="Bild till Progreso Pier är skapad av Ros_K Photographie och licenencerad under https://creativecommons.org/licenses/by/2.0/"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="365dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/licencetext4" />
 
     <TextView
         android:id="@+id/licencetext6"
         android:layout_width="353dp"
         android:layout_height="62dp"
+        android:layout_marginStart="28dp"
+
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="50dp"
         android:text="Bild till Progreso Pier är skapad av Ros_K Photographie och licenencerad under https://creativecommons.org/licenses/by/2.0/"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="452dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/licencetext5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
