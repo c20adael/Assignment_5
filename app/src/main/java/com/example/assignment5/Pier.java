@@ -24,6 +24,11 @@ public class Pier {
         tmp+=name+" is located in "+location+" and is "+length+"m long. Byggdes "+cost+".";
         return tmp;
     }
+    public String imgtest (){
+        String testbild = new String();
+        testbild = img;
+        return testbild;
+    }
 
 
     @Override

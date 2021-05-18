@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -44,6 +45,14 @@ public class list extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getApplicationContext(), PierArrayList.get(position).info(), Toast.LENGTH_LONG).show();
+                WebView imageView = findViewById(R.id.image);
+                imageView.setInitialScale(1);
+                imageView.getSettings().setLoadWithOverviewMode(true);
+                imageView.getSettings().setUseWideViewPort(true);
+                imageView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
+                imageView.setScrollbarFadingEnabled(false);
+                imageView.loadUrl(PierArrayList.get(position).imgtest());
+
 
             }
         });
