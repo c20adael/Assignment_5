@@ -9,8 +9,8 @@
 
     <ListView
         android:id="@+id/PierListView"
-        android:layout_width="353dp"
-        android:layout_height="216dp"
+        android:layout_width="361dp"
+        android:layout_height="133dp"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -21,9 +21,10 @@
         android:id="@+id/Getinfo"
         android:layout_width="100dp"
         android:layout_height="70dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="4dp"
         android:text="Get Info"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/PierListView" />
 
@@ -33,6 +34,8 @@
         android:layout_height="325dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Getinfo" />
+        app:layout_constraintTop_toBottomOf="@+id/Getinfo"
+        app:layout_constraintVertical_bias="0.154" />
 </androidx.constraintlayout.widget.ConstraintLayout>

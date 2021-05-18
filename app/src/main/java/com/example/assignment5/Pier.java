@@ -6,22 +6,22 @@ public class Pier {
     private String name;
     private String location;
     private int length;
-    private int cost;
+    private int year;
 
 
 
-    public Pier (String n, String l, int h, int c, String p, String i) {
+    public Pier (String n, String l, int h, int y, String p, String i) {
 
         licence=p;
         img=i;
         name=n;
         location=l;
         length=h;
-        cost=c;
+        year=y;
     }
     public String info(){
         String tmp = new String();
-        tmp+=name+" is located in "+location+" and is "+length+"m long. Byggdes "+cost+".";
+        tmp+=name+" is located in "+location+" and is "+length+"m long. Was built "+year+".";
         return tmp;
     }
     public String imgtest (){

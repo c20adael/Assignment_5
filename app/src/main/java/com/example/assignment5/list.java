@@ -123,13 +123,13 @@ public class list extends AppCompatActivity {
                     String name = jsonObject.getString("name");
                     String location = jsonObject.getString("location");
                     int Length = jsonObject.getInt("size");
-                    int cost = jsonObject.getInt("cost");
+                    int year = jsonObject.getInt("cost");
 
                     JSONObject auxdata = jsonObject.getJSONObject("auxdata");
                     String licence = auxdata.getString("licence");
                     String img = auxdata.getString("img");
 
-                    Pier pier = new Pier(name, location, Length, cost, licence, img);
+                    Pier pier = new Pier(name, location, Length, year, licence, img);
 
 
                     PierArrayList.add(pier);
