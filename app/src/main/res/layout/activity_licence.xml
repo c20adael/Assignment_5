@@ -26,7 +26,7 @@
 
         android:layout_marginLeft="28dp"
         android:layout_marginTop="50dp"
-        android:text="Bild till Progreso Pier är skapad av Ros_K Photographie och licenencerad under https://creativecommons.org/licenses/by/2.0/"
+        android:text="Bild på Lucinda jetty är skapad av Grahamec och licenencerad under https://en.wikipedia.org/wiki/File:Lucinda_jetty_1.jpg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/licencetext1" />
 
@@ -38,7 +38,7 @@
 
         android:layout_marginLeft="28dp"
         android:layout_marginTop="50dp"
-        android:text="Bild till Progreso Pier är skapad av Ros_K Photographie och licenencerad under https://creativecommons.org/licenses/by/2.0/"
+        android:text="Bild till Southend Pier är uppladdad av Damian Dukarski och licenencerad under https://en.wikipedia.org/wiki/File:Southend_Pier_Autumn_2007_-_crop.jpg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/licencetext2" />
 
@@ -50,7 +50,7 @@
 
         android:layout_marginLeft="28dp"
         android:layout_marginTop="50dp"
-        android:text="Bild till Progreso Pier är skapad av Ros_K Photographie och licenencerad under https://creativecommons.org/licenses/by/2.0/"
+        android:text="Bild till Busselton Jetty är skapad av Greg O'Beirne och licenencerad under https://en.wikipedia.org/wiki/File:BusseltonJetty1_gobeirne.jpg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/licencetext3" />
 
@@ -62,7 +62,7 @@
 
         android:layout_marginLeft="28dp"
         android:layout_marginTop="50dp"
-        android:text="Bild till Progreso Pier är skapad av Ros_K Photographie och licenencerad under https://creativecommons.org/licenses/by/2.0/"
+        android:text="Bild till Southport Pier är skapad av MartinMaynard och licenencerad under https://en.wikipedia.org/wiki/File:Southport_Pier_2016.jpg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/licencetext4" />
 
@@ -74,7 +74,7 @@
 
         android:layout_marginLeft="28dp"
         android:layout_marginTop="50dp"
-        android:text="Bild till Progreso Pier är skapad av Ros_K Photographie och licenencerad under https://creativecommons.org/licenses/by/2.0/"
+        android:text="Bild till Walton-on-the-Naze är skapad av Sannse och licenencerad under https://en.wikipedia.org/wiki/File:Walton-on-the-Naze.jpg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/licencetext5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
