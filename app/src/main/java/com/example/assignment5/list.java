@@ -12,6 +12,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -37,21 +38,24 @@ public class list extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
-
+        WebView imageView = findViewById(R.id.image);
+        TextView testview = findViewById(R.id.Bordevaraentoast);
         adapter=new ArrayAdapter<Pier>(this,R.layout.textviewextra,R.id.Actualtextviewextra,PierArrayList);
         ListView PierList=findViewById(R.id.PierListView);
         PierList.setAdapter(adapter);
         PierList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getApplicationContext(), PierArrayList.get(position).info(), Toast.LENGTH_LONG).show();
-                WebView imageView = findViewById(R.id.image);
+                testview.setText(PierArrayList.get(position).info());
                 imageView.setInitialScale(1);
                 imageView.getSettings().setLoadWithOverviewMode(true);
                 imageView.getSettings().setUseWideViewPort(true);
                 imageView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
                 imageView.setScrollbarFadingEnabled(false);
                 imageView.loadUrl(PierArrayList.get(position).imgtest());
+
 
 
             }
